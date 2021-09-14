@@ -107,18 +107,6 @@ body{
   text-transform: uppercase;
 }
 
-.member__information__title > span{
-  position: absolute;
-  transform: rotate(90deg);
-  top: 100px;
-  right: -100px;
-  text-align: left;
-  width: 40ch;
-  font-family: "PT Serif";
-  font-size: 10px;
-  text-transform: uppercase;
-}
-
 footer p{
   margin: 25px 0;
   display: block;
