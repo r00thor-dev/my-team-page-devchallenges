@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  display: block;
+}
+
+.container{
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 40px;
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.teamtitle{
+  width: 100%;
+  display: flex;
+  align-content: stretch;
+  justify-content: flex-start;
+
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin: 60px 0 40px 0;
+}
+
+.teamtitle > section{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.teamtitle h1{
+  font-family: "PT Serif";
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.teamtitle h2{
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.teamtitle p{
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: normal;
+  max-width: 40ch;
+}
+
+.member{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 100px;
+}
+
+.member .member__information{
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.member p{
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.member__information__title{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.member__information__title > img{
+  display: block;
+  max-width: 100%;
+  padding-right: 20px;
+  height: auto;
+}
+
+.member__information__title > span{
+  position: absolute;
+  transform: rotate(90deg);
+  top: 100px;
+  right: -100px;
+  text-align: left;
+  width: 40ch;
+  font-family: "PT Serif";
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.member__information__title > span{
+  position: absolute;
+  transform: rotate(90deg);
+  top: 100px;
+  right: -100px;
+  text-align: left;
+  width: 40ch;
+  font-family: "PT Serif";
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+footer p{
+  margin: 25px 0;
+  display: block;
+  text-align: center;
+
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: normal;
+  color: #a9a9a9;
+}
+
+@media (max-width: 575px){
+  .member .member__information.mobile-unpair{
+    top: -40px;
+  }
+
+  .member .member__information.mobile-pair{
+    top: 40px;
+  }
+}
+
+@media (min-width: 576px){
+  .member .member__information.desktop-unpair{
+    top: -40px;
+  }
+
+  .member .member__information.desktop-pair{
+    top: 40px;
+  }
+
+  .teamtitle{
+    flex-direction: row;
+    margin-top: 100px;
+  }
+
+  .teamtitle h1{
+    font-size: 36px;
+  }
+
+  .teamtitle h2{
+    font-size: 18px;
+  }
+
+  .teamtitle p{
+    font-size: 18px;
+  }
+
+  .member{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
